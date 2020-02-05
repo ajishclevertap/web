@@ -2,11 +2,11 @@ function __wizrocket() {
 
 
     //var targetDomain = 'sk1.wzrkt.com';
-    //var targetDomain =  'wzrkt.com';
-    var targetDomain = 'localhost:2828'; //ALWAYS comment this line before deploying
+    var targetDomain =  'wzrkt.com';
+    //var targetDomain = 'localhost:2828'; //ALWAYS comment this line before deploying
 
-    //var wz_pr = "https:";
-    var wz_pr = "http:";
+    var wz_pr = "https:";
+    //var wz_pr = "http:";
 
     var dataPostURL, recorderURL, emailURL;
     var wiz = this;
