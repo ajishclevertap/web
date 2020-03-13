@@ -2,9 +2,10 @@ function __wizrocket() {
 
 
   var targetDomain = 'wzrkt.com';
-  // var targetDomain = 'localhost:3838'; //ALWAYS comment this line before deploying
+  //var targetDomain = 'localhost:2828'; //ALWAYS comment this line before deploying
 
   var wz_pr = "https:";
+  //var wz_pr = "http:";
 
   var dataPostURL, recorderURL, emailURL;
   var wiz = this;
@@ -2815,7 +2816,7 @@ function __wizrocket() {
         var target_notif = msg['inapp_notifs'][index];
         if (typeof target_notif['display']['wtarget_type'] == STRING_CONSTANTS.UNDEFINED || target_notif['display']['wtarget_type'] == 0) {
           showFooterNotification(target_notif);
-        } else if (target_notif['display']['wtarget_type'] == 1) { 	// if display['wtarget_type']==1 then exit intent
+        } else if (target_notif['display']['wtarget_type'] == 1) {  // if display['wtarget_type']==1 then exit intent
           exitintentObj = target_notif;
           window.document.body.onmouseleave = showExitIntent;
         }
